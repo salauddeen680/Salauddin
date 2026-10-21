@@ -1,147 +1,411 @@
-'use client';
-import React from 'react';
-import Head from 'next/head';
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ================= SEO & GOOGLE SEARCH CONSOLE ================= -->
+    <meta name="google-site-verification" content="XXO_Zb9ewdf1cBmv-LqID5RdX-oPzpjuyMZ2ApSUuyM" />
+    
+    <title>Salauddin Saif | CCU Studios - App Developer & Comic Creator</title>
+    <meta name="title" content="Salauddin Saif | CCU Studios - App Developer & Comic Creator">
+    <meta name="description" content="Official website of Salauddin Saif. Download exclusive Android applications, read original CCU Studios comics like Arhaan, and connect with me.">
+    <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Arhaan Comic, App Developer, Salauddin Apps, kXlZOS, 08W9ID, Android Developer, Comic Creator">
+    <meta name="author" content="Salauddin Saif">
+    <meta name="robots" content="index, follow">
 
-export default function Portfolio() {
-  return (
-    <>
-      <Head>
-        <title>Salauddin Saif | CCU Studios - App Developer & Comic Creator</title>
-        <meta name="description" content="Official website of Salauddin Saif. Download exclusive Android applications, read original CCU Studios comics like Arhaan, and connect with me." />
-        <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Arhaan Comic, App Developer, Salauddin Apps, kXlZOS, 08W9ID, Android Developer, Comic Creator" />
-        <meta name="google-site-verification" content="XXO_Zb9ewdf1cBmv-LqID5RdX-oPzpjuyMZ2ApSUuyM" />
-        <link rel="icon" href="/assets/images/1000000053.jpg" type="image/jpeg" />
-      </Head>
+    <!-- Open Graph (Link Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salauddin-saif.vercel.app/">
+    <meta property="og:title" content="Salauddin Saif | CCU Studios">
+    <meta property="og:description" content="App Developer & Comic Creator. Crafting seamless digital experiences and building the expansive universe of CCU Studios.">
+    <!-- Note: For OG image, try to use a direct .jpg link -->
+    <meta property="og:image" content="https://ibb.co/R44FJTrp">
 
-      <div className="antialiased selection:bg-brand-primary selection:text-white bg-[#0a0a0a] text-white min-h-screen overflow-x-hidden font-sans">
+    <!-- Twitter (Link Preview) -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salauddin-saif.vercel.app/">
+    <meta property="twitter:title" content="Salauddin Saif | CCU Studios">
+    <meta property="twitter:description" content="App Developer & Comic Creator. Explore my Android apps and comics.">
+    <meta property="twitter:image" content="https://ibb.co/R44FJTrp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/1000000053.jpg" type="image/jpeg">
+    <!-- =============================================================== -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], },
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            light: '#ffffff',
+                            primary: '#8b5cf6',
+                            secondary: '#3b82f6',
+                            accent: '#f43f5e',
+                            surface: '#171717',
+                            border: '#262626'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #ffffff; overflow-x: hidden; }
+        .text-gradient { 
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
         
-        {/* Navigation */}
-        <nav className="fixed w-full z-50 top-0 bg-[#0a0a0a]/80 backdrop-blur-lg border-b border-[#262626]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
-              <a href="#" className="text-2xl font-bold tracking-wider flex items-center gap-2">
-                <img 
-                  src="/assets/images/1000000053.jpg" 
-                  alt="Logo" 
-                  className="w-10 h-10 rounded-lg object-cover border border-[#8b5cf6]" 
-                  onError={(e) => { e.currentTarget.src='https://placehold.co/100x100/8b5cf6/fff?text=SS'; }} 
-                />
-                SALAUDDIN
-              </a>
-              <div className="hidden md:flex space-x-8">
-                <a href="#about" className="text-gray-400 hover:text-white font-medium transition-colors">About</a>
-                <a href="#apps" className="text-gray-400 hover:text-white font-medium transition-colors">Apps</a>
-                <a href="#comics" className="text-gray-400 hover:text-white font-medium transition-colors">Comics</a>
-                <a href="#social" className="text-gray-400 hover:text-white font-medium transition-colors">Connect</a>
-              </div>
-            </div>
-          </div>
-        </nav>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
 
-        {/* Hero Section */}
-        <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
-          <div className="flex-1 text-center md:text-left">
-            <div className="inline-block px-4 py-2 rounded-full bg-[#171717] border border-[#262626] text-[#8b5cf6] text-sm font-semibold mb-6">
-              🚀 Welcome to CCU Studios
+        .glass-card {
+            background: rgba(23, 23, 23, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 92, 246, 0.5);
+            box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.2);
+        }
+
+        .hero-image-container {
+            position: relative;
+            border-radius: 30px;
+            padding: 4px;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6, #f43f5e);
+            background-size: 200% 200%;
+            animation: gradientMove 3s ease infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .comic-cover { transition: transform 0.5s ease; }
+        .glass-card:hover .comic-cover { transform: scale(1.05); }
+
+        .social-brand-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .social-brand-sc { background: #FFFC00; color: #000; }
+        .social-brand-fb { background: #1877F2; }
+        .social-brand-in { background: #0A66C2; }
+        .social-brand-tt, .social-brand-th { background: #000000; border: 1px solid #333; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-brand-dark/80 backdrop-blur-lg border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="text-2xl font-bold tracking-wider flex items-center gap-2">
+                    <img src="assets/images/1000000053.jpg" alt="Logo" class="w-10 h-10 rounded-lg object-cover border border-brand-primary" onerror="this.src='https://placehold.co/100x100/8b5cf6/fff?text=SS'">
+                    SALAUDDIN
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-400 hover:text-white font-medium transition-colors">About</a>
+                    <a href="#apps" class="text-gray-400 hover:text-white font-medium transition-colors">Apps</a>
+                    <a href="#comics" class="text-gray-400 hover:text-white font-medium transition-colors">Comics</a>
+                    <a href="#social" class="text-gray-400 hover:text-white font-medium transition-colors">Connect</a>
+                </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6]">Salauddin Saif</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left">
+            <div class="inline-block px-4 py-2 rounded-full bg-brand-surface border border-brand-border text-brand-primary text-sm font-semibold mb-6">
+                🚀 Welcome to CCU Studios
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                I'm <span class="text-gradient">Salauddin Saif</span>
             </h1>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl font-light leading-relaxed">
-              App Developer & Comic Creator. Crafting seamless digital experiences and building the expansive universe of CCU Studios.
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl font-light leading-relaxed">
+                App Developer & Comic Creator. Crafting seamless digital experiences and building the expansive universe of CCU Studios.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#apps" className="px-8 py-4 bg-[#8b5cf6] hover:bg-violet-500 text-white font-semibold rounded-xl transition-all shadow-[0_0_20px_rgba(139,92,246,0.4)] flex items-center justify-center gap-3">
-                <i className="fa-brands fa-android text-xl"></i> My Applications
-              </a>
-              <a href="#social" className="px-8 py-4 bg-[#171717] border border-[#262626] hover:border-gray-500 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-3">
-                Let's Connect <i className="fa-solid fa-arrow-right"></i>
-              </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#apps" class="px-8 py-4 bg-brand-primary hover:bg-violet-500 text-white font-semibold rounded-xl transition-all shadow-[0_0_20px_rgba(139,92,246,0.4)] flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-android text-xl"></i> My Applications
+                </a>
+                <a href="#social" class="px-8 py-4 bg-brand-surface border border-brand-border hover:border-gray-500 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-3">
+                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-          </div>
+        </div>
 
-          <div className="flex-shrink-0 w-72 h-72 md:w-96 md:h-96">
-            <div className="relative rounded-[30px] p-1 bg-gradient-to-br from-[#8b5cf6] via-[#3b82f6] to-[#f43f5e] w-full h-full animate-[gradientMove_3s_ease_infinite] bg-[length:200%_200%]">
-              <img 
-                src="/assets/images/1000000053.jpg" 
-                alt="Salauddin Saif" 
-                className="w-full h-full object-cover rounded-[26px]" 
-                onError={(e) => { e.currentTarget.src='https://placehold.co/600x600/171717/8b5cf6?text=Salauddin+Saif'; }} 
-              />
+        <div class="flex-shrink-0 w-72 h-72 md:w-96 md:h-96">
+            <div class="hero-image-container w-full h-full">
+                <!-- User Main Hero Image -->
+                <img src="assets/images/1000000053.jpg" alt="Salauddin Saif" class="w-full h-full object-cover rounded-[26px]" 
+                     onerror="this.src='https://placehold.co/600x600/171717/8b5cf6?text=Salauddin+Saif'">
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        {/* About Section */}
-        <section id="about" className="py-24 bg-black">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-4xl font-bold mb-6">About <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6]">Me</span></h2>
-                <p className="text-gray-400 text-lg leading-relaxed mb-6">
-                  Mera naam <strong>Salauddin Saif</strong> hai. Main ek versatile creator hoon jo technology aur storytelling ke beech ka bridge banata hai. Mera passion Android applications develop karna aur unique universes create karna hai.
-                </p>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Har app jo main banata hoon, uska goal user ki life aasan karna hota hai. Aur har comic jo main likhta hoon, wo ek nayi duniya ka darwaza kholti hai.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-4xl font-bold mb-6"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6]">CCU Studios</span></h2>
-                <div className="bg-[#171717]/70 backdrop-blur-md border border-white/5 p-8 rounded-2xl relative overflow-hidden transition-all hover:-translate-y-2 hover:border-[#8b5cf6]/50 hover:shadow-[0_20px_40px_-10px_rgba(139,92,246,0.2)]">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#3b82f6]/10 rounded-full blur-3xl"></div>
-                  <i className="fa-solid fa-user-astronaut text-4xl text-[#3b82f6] mb-4"></i>
-                  <h3 className="text-2xl font-bold mb-3">The Universe of Imagination</h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    CCU Studios mera dream aur vision hai. Yeh wo jagah hai jahan mere original comic characters zinda hote hain. Mera sabse bada project <em>"Arhaan - The Indian Legacy of Science (1985)"</em> yahi se shuru hua hai.
-                  </p>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">About <span class="text-gradient">Me</span></h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Mera naam <strong>Salauddin Saif</strong> hai. Main ek versatile creator hoon jo technology aur storytelling ke beech ka bridge banata hai. Mera passion Android applications develop karna aur unique universes create karna hai.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Har app jo main banata hoon, uska goal user ki life aasan karna hota hai. Aur har comic jo main likhta hoon, wo ek nayi duniya ka darwaza kholti hai.
+                    </p>
                 </div>
-              </div>
+                <div>
+                    <h2 class="text-4xl font-bold mb-6"><span class="text-gradient">CCU Studios</span></h2>
+                    <div class="glass-card p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-secondary/10 rounded-full blur-3xl"></div>
+                        <i class="fa-solid fa-user-astronaut text-4xl text-brand-secondary mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">The Universe of Imagination</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            CCU Studios mera dream aur vision hai. Yeh wo jagah hai jahan mere original comic characters zinda hote hain. Mera sabse bada project <em>"Arhaan - The Indian Legacy of Science (1985)"</em> yahi se shuru hua hai.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        {/* Social Media Section (With New Threads Link) */}
-        <section id="social" className="py-24 border-t border-[#262626] relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#8b5cf6]/10 rounded-full blur-[120px] pointer-events-none"></div>
-          
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Official <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6]">Social Profiles</span></h2>
-              <p className="text-gray-400 text-lg">Connect with me for latest updates on apps and comics.</p>
+    <!-- Apps & APKs Section -->
+    <section id="apps" class="py-24 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Official <span class="text-gradient">Applications</span></h2>
+                <p class="text-gray-400 text-lg">Download my exclusive Android applications directly from here.</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
-              
-              {/* Threads (NEW) */}
-              <a href="https://www.threads.com/@iamsaif.001" target="_blank" rel="noopener noreferrer" className="bg-[#171717]/70 backdrop-blur-md border border-white/5 rounded-2xl p-6 flex flex-col items-center text-center group transition-all hover:-translate-y-2 hover:border-[#8b5cf6]/50">
-                <div className="w-20 h-20 rounded-full bg-black text-white mb-4 shadow-lg flex items-center justify-center border-2 border-gray-700 group-hover:scale-110 transition-transform">
-                  <i className="fa-brands fa-threads text-4xl"></i>
+            <div class="flex flex-col gap-10">
+                <!-- App 1 -->
+                <div class="glass-card rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-white/5 relative overflow-hidden group hover:border-brand-primary/50">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 bg-gradient-to-br from-gray-800 to-black rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden border-2 border-white/10 relative z-10">
+                        <img src="assets/images/app1_logo.png" alt="App Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i class="fa-brands fa-android text-5xl text-brand-primary" style="display: none;"></i>
+                    </div>
+                    
+                    <div class="flex-grow w-full relative z-10 text-center md:text-left">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+                            <!-- Fixed Missing Closing Tag here -->
+                            <h3 class="text-3xl font-bold text-white mb-2 md:mb-0">CCU Studios App</h3>
+                            <span class="inline-block px-4 py-1 bg-brand-primary/20 border border-brand-primary/30 text-brand-primary text-sm font-bold rounded-full">Latest Build</span>
+                        </div>
+                        
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Mera official Android application. Isme aapko behtareen features aur ek dam smooth user experience milega. Directly Google Drive se download karein.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
+                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Status</span>
+                                <span class="text-white font-medium text-green-400">Available</span>
+                            </div>
+                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
+                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Platform</span>
+                                <span class="text-white font-medium">Android APK</span>
+                            </div>
+                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
+                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Developer</span>
+                                <span class="text-white font-medium">Salauddin Saif</span>
+                            </div>
+                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
+                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Source</span>
+                                <span class="text-white font-medium">Google Drive</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://drive.google.com/uc?export=download&id=1vcTaUBnEt06x6PorON98KA2NVn0tngff" class="w-full md:w-auto px-10 py-4 bg-brand-primary hover:bg-violet-500 text-white font-bold rounded-xl text-center transition-all flex justify-center items-center gap-3 shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.6)]">
+                                <i class="fa-solid fa-cloud-arrow-down text-xl"></i> Download APK File
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <h4 className="text-lg font-bold text-white mb-1">Salauddin</h4>
-                <p className="text-gray-400 text-sm mb-4">@iamsaif.001</p>
-                <div className="mt-auto w-full py-2 rounded-lg bg-white/10 border border-white/20 text-white group-hover:bg-white/20 transition-colors font-semibold text-sm">
-                  <i className="fa-brands fa-threads mr-1"></i> Follow
-                </div>
-              </a>
-
-              {/* Instagram */}
-              <a href="https://www.instagram.com/iamsaif.001" target="_blank" rel="noopener noreferrer" className="bg-[#171717]/70 backdrop-blur-md border border-white/5 rounded-2xl p-6 flex flex-col items-center text-center group transition-all hover:-translate-y-2 hover:border-[#8b5cf6]/50">
-                <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                  <img src="https://ibb.co/R44FJTrp" alt="Insta" className="w-full h-full object-cover rounded-full border-2 border-black" onError={(e) => { e.currentTarget.src='https://placehold.co/200x200/171717/fff?text=IG'; }} />
-                </div>
-                <h4 className="text-lg font-bold text-white mb-1">Salauddin</h4>
-                <p className="text-gray-400 text-sm mb-4">@iamsaif.001</p>
-                <div className="mt-auto w-full py-2 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors font-semibold text-sm">
-                  <i className="fa-brands fa-instagram mr-1"></i> Follow
-                </div>
-              </a>
-
-              {/* Add Facebook, TikTok, Snapchat, LinkedIn here similar to your HTML... */}
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-      </div>
-    </>
-  );
-}
+    <!-- Comics Section -->
+    <section id="comics" class="py-24 bg-black border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-16">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">CCU Studios <span class="text-gradient">Comics</span></h2>
+                    <p class="text-gray-400 text-lg">Read my original stories and dive into new universes.</p>
+                </div>
+                <div class="hidden md:block">
+                    <i class="fa-solid fa-book-journal-whills text-6xl text-brand-border"></i>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Comic 1: Arhaan -->
+                <a href="https://ccu-studios.vercel.app/comics/arhaan-the-indian-legacy-of-science-1985-part-1" target="_blank" class="glass-card rounded-2xl overflow-hidden group block">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/arhaan_cover.jpg" alt="Arhaan Comic" class="w-full h-full object-cover comic-cover" onerror="this.src='https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=600&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-surface to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-primary text-sm font-bold tracking-wider mb-2">PART 1</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Arhaan - The Indian Legacy of Science (1985)</h3>
+                        <p class="text-gray-400 text-sm flex items-center gap-2 font-medium">
+                            Read Full Comic <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 transition-transform"></i>
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Comic 2: kXlZOS -->
+                <a href="https://ccu-studios.vercel.app/comics/kXlZOS559UwYT80N04lc" target="_blank" class="glass-card rounded-2xl overflow-hidden group block">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/comic_2_cover.jpg" alt="Comic Chapter" class="w-full h-full object-cover comic-cover" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-surface to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-secondary text-sm font-bold tracking-wider mb-2">CHAPTER</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">The kXlZOS Universe</h3>
+                        <p class="text-gray-400 text-sm flex items-center gap-2 font-medium">
+                            Read Full Comic <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 transition-transform"></i>
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Comic 3: 08W9ID -->
+                <a href="https://ccu-studios.vercel.app/comics/08W9IDL0Ts0NtwW5hGaC" target="_blank" class="glass-card rounded-2xl overflow-hidden group block">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/comic_3_cover.jpg" alt="Comic Chapter" class="w-full h-full object-cover comic-cover" onerror="this.src='https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=600&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-surface to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-accent text-sm font-bold tracking-wider mb-2">CHAPTER</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">The 08W9ID Storyline</h3>
+                        <p class="text-gray-400 text-sm flex items-center gap-2 font-medium">
+                            Read Full Comic <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 transition-transform"></i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-24 border-t border-brand-border relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Official <span class="text-gradient">Social Profiles</span></h2>
+                <p class="text-gray-400 text-lg">Connect with me for latest updates on apps and comics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+                
+                <!-- Threads (NEW) -->
+                <a href="https://www.threads.com/@iamsaif.001" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-th mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/R44FJTrp" alt="Threads" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=TH'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-threads mr-1"></i> Follow
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/iamsaif.001?dlrf=eGprbDBibGh6ZDd5" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-ig mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/R44FJTrp" alt="Insta" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=IG'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-instagram mr-1"></i> Follow
+                    </div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1J1anKKTre/" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-fb mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/R44FJTrp" alt="Facebook" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=FB'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">@1J1anKKTre</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-[#1877F2]/10 border border-[#1877F2]/30 text-[#60a5fa] group-hover:bg-[#1877F2]/20 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-facebook mr-1"></i> View Profile
+                    </div>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@iamsaif.001" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-tt mb-4 shadow-lg shadow-gray-800 group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/R44FJTrp" alt="TikTok" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=TT'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-white/10 border border-white/20 text-white group-hover:bg-white/20 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-tiktok mr-1"></i> Follow
+                    </div>
+                </a>
+
+                <!-- Snapchat -->
+                <a href="https://www.snapchat.com/add/salauddin_idr25?share_id=VEYlw58C6jQ&locale=en-IN" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-sc mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/LzYtsvzX" alt="Snap" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=SC'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">@salauddin_idr25</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-[#FFFC00]/10 border border-[#FFFC00]/30 text-[#FFFC00] group-hover:bg-[#FFFC00]/20 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-snapchat mr-1"></i> Add Friend
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/salauddin-saif-6a30b6398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 rounded-full p-1 social-brand-in mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <img src="https://ibb.co/LzYtsvzX" alt="LinkedIn" class="w-full h-full object-cover rounded-full border-2 border-black" onerror="this.src='https://placehold.co/200x200/171717/fff?text=IN'">
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
+                    <p class="text-gray-400 text-sm mb-4">App Developer</p>
+                    <div class="mt-auto w-full py-2 rounded-lg bg-[#0A66C2]/10 border border-[#0A66C2]/30 text-[#4fa1f4] group-hover:bg-[#0A66C2]/20 transition-colors font-semibold text-sm">
+                        <i class="fa-brands fa-linkedin mr-1"></i> Connect
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider flex items-center gap-2 mb-4">
+                <img src="assets/images/1000000053.jpg" alt="Logo" class="w-8 h-8 rounded-lg object-cover" onerror="this.src='https://placehold.co/100x100/8b5cf6/fff?text=SS'">
+                <span class="text-white">SALAUDDIN</span>
+            </a>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 Salauddin Saif | Built for CCU Studios. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
