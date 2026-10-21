@@ -1,287 +1,270 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ================= SEO & GOOGLE SEARCH CONSOLE ================= -->
-    <meta name="google-site-verification" content="XXO_Zb9ewdf1cBmv-LqID5RdX-oPzpjuyMZ2ApSUuyM" />
-    
-    <title>Salauddin Saif | CCU Studios - App Developer & Comic Creator</title>
-    <meta name="title" content="Salauddin Saif | CCU Studios - App Developer & Comic Creator">
-    <meta name="description" content="Official website of Salauddin Saif. Download exclusive Android applications, read original CCU Studios comics like Arhaan, and connect with me.">
-    <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Arhaan Comic, App Developer, Salauddin Apps, kXlZOS, 08W9ID, Android Developer, Comic Creator">
-    <meta name="author" content="Salauddin Saif">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <meta name="color-scheme" content="dark">
+  <title>Salauddin Saif | CCU Studios — App Developer & Comic Creator</title>
+  <meta name="description" content="Official website of Salauddin Saif, creator at CCU Studios. Explore Android applications, original comics, creative projects and official social profiles.">
+  <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Arhaan, Android app developer, comic creator, Indian comic universe">
+  <meta name="author" content="Salauddin Saif">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://salauddin-saif.vercel.app/">
 
-    <!-- Open Graph (Link Preview) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://salauddin-saif.vercel.app/">
-    <meta property="og:title" content="Salauddin Saif | CCU Studios">
-    <meta property="og:description" content="App Developer & Comic Creator. Crafting seamless digital experiences and building the expansive universe of CCU Studios.">
-    <meta property="og:image" content="https://salauddin-saif.vercel.app/profile.jpg">
+  <!-- Social sharing previews. Keep profile.jpg in the repository root for the image preview. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CCU Studios">
+  <meta property="og:url" content="https://salauddin-saif.vercel.app/">
+  <meta property="og:title" content="Salauddin Saif | CCU Studios">
+  <meta property="og:description" content="App Developer & Comic Creator. Explore Android apps and the original CCU Studios universe.">
+  <meta property="og:image" content="https://salauddin-saif.vercel.app/profile.jpg">
+  <meta property="og:image:alt" content="Salauddin Saif — CCU Studios">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salauddin Saif | CCU Studios">
+  <meta name="twitter:description" content="Explore Android apps, original comics and projects by Salauddin Saif.">
+  <meta name="twitter:image" content="https://salauddin-saif.vercel.app/profile.jpg">
 
-    <!-- Twitter (Link Preview) -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://salauddin-saif.vercel.app/">
-    <meta property="twitter:title" content="Salauddin Saif | CCU Studios">
-    <meta property="twitter:description" content="App Developer & Comic Creator. Explore my Android apps and comics.">
-    <meta property="twitter:image" content="https://salauddin-saif.vercel.app/profile.jpg">
+  <link rel="icon" href="./profile.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Salauddin Saif",
+    "url": "https://salauddin-saif.vercel.app/",
+    "jobTitle": "App Developer and Comic Creator",
+    "description": "Creator at CCU Studios, working on Android applications and original comics.",
+    "sameAs": [
+      "https://www.instagram.com/iamsaif.001/",
+      "https://www.threads.com/@iamsaif.001",
+      "https://www.linkedin.com/in/salauddin-saif-6a30b6398",
+      "https://tiktok.com/@iamsaif.001",
+      "https://www.facebook.com/share/1J1anKKTre/"
+    ]
+  }
+  </script>
 
-    <!-- Favicon (Browser Tab Icon) -->
-    <link rel="icon" href="profile.jpg" type="image/jpeg">
-    <!-- =============================================================== -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Outfit', 'sans-serif'], },
-                    colors: {
-                        brand: {
-                            dark: '#0a0a0a', light: '#ffffff', primary: '#8b5cf6', secondary: '#3b82f6',
-                            accent: '#f43f5e', surface: '#171717', border: '#262626'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { background-color: #0a0a0a; color: #ffffff; overflow-x: hidden; }
-        .text-gradient { background: linear-gradient(135deg, #8b5cf6, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0a0a0a; }
-        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
-
-        .glass-card { background: rgba(23, 23, 23, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .glass-card:hover { transform: translateY(-8px); border-color: rgba(139, 92, 246, 0.5); box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.2); }
-
-        .hero-image-container { position: relative; border-radius: 30px; padding: 4px; background: linear-gradient(135deg, #8b5cf6, #3b82f6, #f43f5e); background-size: 200% 200%; animation: gradientMove 3s ease infinite; }
-        @keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-
-        .comic-cover { transition: transform 0.5s ease; }
-        .glass-card:hover .comic-cover { transform: scale(1.05); }
-
-        .social-brand-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-        .social-brand-sc { background: #FFFC00; color: #000; }
-        .social-brand-fb { background: #1877F2; }
-        .social-brand-in { background: #0A66C2; }
-        .social-brand-tt, .social-brand-th { background: #000000; border: 1px solid #333; }
-    </style>
+  <style>
+    :root{--bg:#09090d;--panel:#12131b;--panel2:#191b26;--line:rgba(255,255,255,.1);--muted:#a5a8b8;--purple:#9b72ff;--blue:#4d8dff;--pink:#ed6bb5;--green:#54d6a0}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(77,141,255,.10),transparent 34%),radial-gradient(ellipse at 5% 35%,rgba(155,114,255,.08),transparent 28%),var(--bg);color:#f7f7fb;font-family:Outfit,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .gradient{background:linear-gradient(110deg,#b18aff 0%,#6495ff 55%,#ed78bd 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(9,9,13,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.09em;font-size:1.25rem}
+    .brand-logo{width:43px;height:43px;object-fit:cover;border-radius:13px;border:1px solid rgba(177,138,255,.65);background:linear-gradient(135deg,#26213c,#172b4d)}
+    .nav-links{display:flex;align-items:center;gap:25px;color:#c3c5d1;font-weight:500}
+    .nav-links a:hover,.nav-links a:focus-visible{color:#fff}
+    .menu-button{display:none;background:var(--panel2);color:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:10px;font:inherit}
+    .hero{min-height:610px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding-top:76px;padding-bottom:90px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:99px;color:#c5a9ff;font-size:.92rem;font-weight:600}
+    h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.06;letter-spacing:-.045em;margin:23px 0}
+    .hero-copy{max-width:640px;font-size:1.22rem;color:var(--muted);font-weight:300;margin:0 0 30px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:13px;font-weight:700;border:1px solid var(--line);transition:transform .2s,filter .2s,background .2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+    .btn-primary{background:linear-gradient(115deg,#8056ed,#477df2);border-color:transparent;box-shadow:0 10px 32px rgba(93,93,242,.22)}
+    .btn-secondary{background:rgba(255,255,255,.045)}
+    .portrait-wrap{width:min(100%,390px);aspect-ratio:1;margin-inline:auto;padding:4px;border-radius:32px;background:linear-gradient(135deg,#9b72ff,#4d8dff,#ed6bb5);box-shadow:0 25px 80px rgba(77,105,255,.18)}
+    .portrait{width:100%;height:100%;object-fit:cover;border-radius:28px;background:linear-gradient(145deg,#356fe8,#8a58bc);color:white;text-align:center}
+    .section{padding:82px 0;border-top:1px solid rgba(255,255,255,.07)}
+    .section-alt{background:rgba(0,0,0,.24)}
+    .section-heading{text-align:center;margin:0 auto 44px;max-width:720px}
+    .section-heading h2,.about h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 12px}
+    .section-heading p{margin:0;color:var(--muted);font-size:1.08rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .panel{background:linear-gradient(145deg,rgba(26,28,40,.92),rgba(16,17,24,.9));border:1px solid var(--line);border-radius:23px;padding:30px;box-shadow:0 15px 45px rgba(0,0,0,.12)}
+    .panel p{color:var(--muted);margin:0 0 14px}
+    .panel p:last-child{margin-bottom:0}
+    .mini-icon{font-size:2.15rem;margin-bottom:14px}
+    .app-card{display:grid;grid-template-columns:120px 1fr;gap:27px;align-items:start}
+    .app-icon{height:120px;border-radius:25px;background:linear-gradient(135deg,#27233d,#132c4e);border:1px solid var(--line);display:grid;place-items:center;font-size:3rem}
+    .app-card h3{font-size:1.65rem;margin:0 0 8px}
+    .app-card p{color:var(--muted);margin:0 0 20px}
+    .tags{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 22px}
+    .tag{font-size:.83rem;color:#d5d7e3;background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:9px;padding:5px 10px}
+    .social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .social-card{display:flex;align-items:center;gap:15px;padding:19px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:17px;transition:transform .2s,border-color .2s}
+    .social-card:hover{transform:translateY(-4px);border-color:rgba(155,114,255,.6)}
+    .social-icon{flex:0 0 47px;width:47px;height:47px;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;font-weight:800;color:#fff;background:linear-gradient(135deg,#8056ed,#477df2)}
+    .social-card strong{display:block}
+    .social-card small{color:var(--muted);overflow-wrap:anywhere}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#8d90a1;text-align:center;font-size:.92rem}
+    .footer-brand{font-weight:800;color:#f7f7fb;letter-spacing:.08em;margin-bottom:5px}
+    @media(max-width:760px){
+      .container{width:min(100% - 32px,600px)}
+      .nav-inner{height:68px}
+      .menu-button{display:block}
+      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 22px;background:rgba(9,9,13,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
+      .nav-links.open{display:flex}
+      .nav-links a{padding:12px 4px}
+      .hero{grid-template-columns:1fr;gap:32px;padding-top:42px;padding-bottom:62px;text-align:center;min-height:auto}
+      .hero-content{order:2}.hero-visual{order:1}
+      .portrait-wrap{width:min(78vw,310px)}
+      .hero-copy{font-size:1.08rem;margin-inline:auto}
+      .actions{justify-content:center}
+      .section{padding:62px 0}
+      .about-grid{grid-template-columns:1fr}
+      .app-card{grid-template-columns:1fr;text-align:center}
+      .app-icon{width:105px;height:105px;margin-inline:auto}
+      .tags{justify-content:center}
+      .social-grid{grid-template-columns:1fr}
+      .panel{padding:24px}
+      h1{font-size:clamp(2.65rem,12vw,4rem)}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
 </head>
-<body class="antialiased selection:bg-brand-primary selection:text-white">
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Salauddin Saif home">
+        <img class="brand-logo" src="./profile.jpg" alt="Salauddin Saif logo" data-image-fallback="./assets/profile.jpg">
+        <span>SALAUDDIN</span>
+      </a>
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#apps">Apps</a><a href="#comics">Comics</a><a href="#social">Connect</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-brand-dark/80 backdrop-blur-lg border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <a href="#" class="text-2xl font-bold tracking-wider flex items-center gap-2">
-                    <img src="profile.jpg" alt="Logo" class="w-10 h-10 rounded-lg object-cover border border-brand-primary">
-                    SALAUDDIN
-                </a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-400 hover:text-white font-medium transition-colors">About</a>
-                    <a href="#apps" class="text-gray-400 hover:text-white font-medium transition-colors">Apps</a>
-                    <a href="#comics" class="text-gray-400 hover:text-white font-medium transition-colors">Comics</a>
-                    <a href="#social" class="text-gray-400 hover:text-white font-medium transition-colors">Connect</a>
-                </div>
-            </div>
+  <main>
+    <section class="container hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">🚀 Welcome to CCU Studios</span>
+        <h1>I'm <span class="gradient">Salauddin Saif</span></h1>
+        <p class="hero-copy">App Developer &amp; Comic Creator. Crafting digital experiences and building the expansive universe of CCU Studios.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#apps">▣ My Applications</a>
+          <a class="btn btn-secondary" href="#social">Let's Connect <span aria-hidden="true">↗</span></a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
-        <div class="flex-1 text-center md:text-left">
-            <div class="inline-block px-4 py-2 rounded-full bg-brand-surface border border-brand-border text-brand-primary text-sm font-semibold mb-6">
-                🚀 Welcome to CCU Studios
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                I'm <span class="text-gradient">Salauddin Saif</span>
-            </h1>
-            <p class="text-xl text-gray-400 mb-8 max-w-2xl font-light leading-relaxed">
-                App Developer & Comic Creator. Crafting seamless digital experiences and building the expansive universe of CCU Studios.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#apps" class="px-8 py-4 bg-brand-primary hover:bg-violet-500 text-white font-semibold rounded-xl transition-all shadow-[0_0_20px_rgba(139,92,246,0.4)] flex items-center justify-center gap-3">
-                    <i class="fa-brands fa-android text-xl"></i> My Applications
-                </a>
-                <a href="#social" class="px-8 py-4 bg-brand-surface border border-brand-border hover:border-gray-500 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-3">
-                    Let's Connect <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-wrap">
+          <img class="portrait" src="./profile.jpg" alt="Portrait of Salauddin Saif" width="700" height="700" fetchpriority="high" data-image-fallback="./assets/profile.jpg">
         </div>
-
-        <div class="flex-shrink-0 w-72 h-72 md:w-96 md:h-96">
-            <div class="hero-image-container w-full h-full">
-                <!-- User Main Hero Image -->
-                <img src="profile.jpg" alt="Salauddin Saif" class="w-full h-full object-cover rounded-[26px]">
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-4xl font-bold mb-6">About <span class="text-gradient">Me</span></h2>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                        Mera naam <strong>Salauddin Saif</strong> hai. Main ek versatile creator hoon jo technology aur storytelling ke beech ka bridge banata hai. Mera passion Android applications develop karna aur unique universes create karna hai.
-                    </p>
-                    <p class="text-gray-400 text-lg leading-relaxed">
-                        Har app jo main banata hoon, uska goal user ki life aasan karna hota hai. Aur har comic jo main likhta hoon, wo ek nayi duniya ka darwaza kholti hai.
-                    </p>
-                </div>
-                <div>
-                    <h2 class="text-4xl font-bold mb-6"><span class="text-gradient">CCU Studios</span></h2>
-                    <div class="glass-card p-8 rounded-2xl relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-secondary/10 rounded-full blur-3xl"></div>
-                        <i class="fa-solid fa-user-astronaut text-4xl text-brand-secondary mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-3">The Universe of Imagination</h3>
-                        <p class="text-gray-400 leading-relaxed">
-                            CCU Studios mera dream aur vision hai. Yeh wo jagah hai jahan mere original comic characters zinda hote hain. Mera sabse bada project <em>"Arhaan - The Indian Legacy of Science (1985)"</em> yahi se shuru hua hai.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section section-alt" id="about">
+      <div class="container about-grid">
+        <article class="panel">
+          <h2>About <span class="gradient">Me</span></h2>
+          <p>Mera naam <strong>Salauddin Saif</strong> hai. Main technology aur storytelling ke beech bridge banata hoon. Mujhe Android applications develop karna aur unique fictional universes create karna pasand hai.</p>
+          <p>Har digital project ka goal ek useful, enjoyable experience banana hai, aur har comic ek nayi duniya ka darwaza kholti hai.</p>
+        </article>
+        <article class="panel">
+          <div class="mini-icon" aria-hidden="true">🌌</div>
+          <h2><span class="gradient">CCU Studios</span></h2>
+          <p><strong>The Universe of Imagination</strong></p>
+          <p>CCU Studios is my creative universe for original characters, comics and storytelling projects, including <em>Arhaan — The Indian Legacy of Science (1985)</em>.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Apps & APKs Section -->
-    <section id="apps" class="py-24 border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Official <span class="text-gradient">Applications</span></h2>
-                <p class="text-gray-400 text-lg">Download my exclusive Android applications directly from here.</p>
-            </div>
-
-            <div class="flex flex-col gap-10">
-                <div class="glass-card rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-white/5 relative overflow-hidden group hover:border-brand-primary/50">
-                    <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    
-                    <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 bg-gradient-to-br from-gray-800 to-black rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden border-2 border-white/10 relative z-10">
-                        <i class="fa-brands fa-android text-5xl text-brand-primary"></i>
-                    </div>
-                    
-                    <div class="flex-grow w-full relative z-10 text-center md:text-left">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
-                            <h3 class="text-3xl font-bold text-white mb-2 md:mb-0">CCU Studios App</h3>
-                            <span class="inline-block px-4 py-1 bg-brand-primary/20 border border-brand-primary/30 text-brand-primary text-sm font-bold rounded-full">Latest Build</span>
-                        </div>
-                        
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Mera official Android application. Isme aapko behtareen features aur ek dam smooth user experience milega. Directly Google Drive se download karein.
-                        </p>
-                        
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
-                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Status</span>
-                                <span class="text-white font-medium text-green-400">Available</span>
-                            </div>
-                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
-                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Platform</span>
-                                <span class="text-white font-medium">Android APK</span>
-                            </div>
-                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
-                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Developer</span>
-                                <span class="text-white font-medium">Salauddin Saif</span>
-                            </div>
-                            <div class="bg-black/50 border border-white/5 p-3 rounded-xl text-center md:text-left">
-                                <span class="block text-gray-500 text-xs font-bold uppercase mb-1">Source</span>
-                                <span class="text-white font-medium">Google Drive</span>
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="https://drive.google.com/uc?export=download&id=1vcTaUBnEt06x6PorON98KA2NVn0tngff" class="w-full md:w-auto px-10 py-4 bg-brand-primary hover:bg-violet-500 text-white font-bold rounded-xl text-center transition-all flex justify-center items-center gap-3 shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.6)]">
-                                <i class="fa-solid fa-cloud-arrow-down text-xl"></i> Download APK File
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Official <span class="gradient">Applications</span></h2>
+          <p>Explore Android applications created by Salauddin Saif.</p>
         </div>
+        <article class="panel app-card">
+          <div class="app-icon" aria-hidden="true">🤖</div>
+          <div>
+            <h3>CCU Studios App</h3>
+            <p>Official Android application for the CCU Studios experience. Download the APK using the link below.</p>
+            <div class="tags"><span class="tag">Android APK</span><span class="tag">Developer: Salauddin Saif</span><span class="tag">Direct download</span></div>
+            <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&amp;id=1vcTaUBnEt06x6PorON98KA2NVn0tngff" target="_blank" rel="noopener noreferrer">↓ Download APK File</a>
+            <p style="font-size:.88rem;margin-top:14px">Only install APK files you trust. Android may ask you to approve installation from your browser.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Social Media Section -->
-    <section id="social" class="py-24 border-t border-brand-border relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
-        
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Official <span class="text-gradient">Social Profiles</span></h2>
-                <p class="text-gray-400 text-lg">Connect with me for latest updates on apps and comics.</p>
-            </div>
+    <section class="section section-alt" id="comics">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Stories from <span class="gradient">CCU Studios</span></h2>
+          <p>Original worlds, characters and science-fiction storytelling.</p>
+        </div>
+        <article class="panel">
+          <div class="mini-icon" aria-hidden="true">📚</div>
+          <h3>Arhaan — The Indian Legacy of Science (1985)</h3>
+          <p>Explore the novel and other original storytelling projects published under CCU Studios.</p>
+          <a class="btn btn-secondary" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Visit CCU Studios ↗</a>
+        </article>
+      </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
-                
-                <!-- Threads -->
-                <a href="https://www.threads.com/@iamsaif.001" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-th mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <img src="profile.jpg" alt="Threads" class="w-full h-full object-cover rounded-full border-2 border-black">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
-                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
-                    <div class="mt-auto w-full py-2 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors font-semibold text-sm">
-                        <i class="fa-brands fa-threads mr-1"></i> Follow
-                    </div>
-                </a>
+    <section class="section" id="social">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Official <span class="gradient">Social Profiles</span></h2>
+          <p>Connect for updates on applications, comics and creative projects.</p>
+        </div>
+        <div class="social-grid">
+          <a class="social-card" href="https://www.instagram.com/iamsaif.001/" target="_blank" rel="noopener noreferrer"><span class="social-icon">IG</span><span><strong>Instagram</strong><small>@iamsaif.001</small></span></a>
+          <a class="social-card" href="https://www.threads.com/@iamsaif.001" target="_blank" rel="noopener noreferrer"><span class="social-icon">@</span><span><strong>Threads</strong><small>@iamsaif.001</small></span></a>
+          <a class="social-card" href="https://www.facebook.com/share/1J1anKKTre/" target="_blank" rel="noopener noreferrer"><span class="social-icon">f</span><span><strong>Facebook</strong><small>View profile</small></span></a>
+          <a class="social-card" href="https://tiktok.com/@iamsaif.001" target="_blank" rel="noopener noreferrer"><span class="social-icon">♪</span><span><strong>TikTok</strong><small>@iamsaif.001</small></span></a>
+          <a class="social-card" href="https://www.snapchat.com/add/salauddin_idr25" target="_blank" rel="noopener noreferrer"><span class="social-icon">S</span><span><strong>Snapchat</strong><small>@salauddin_idr25</small></span></a>
+          <a class="social-card" href="https://www.linkedin.com/in/salauddin-saif-6a30b6398" target="_blank" rel="noopener noreferrer"><span class="social-icon">in</span><span><strong>LinkedIn</strong><small>Salauddin Saif</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/iamsaif.001?dlrf=eGprbDBibGh6ZDd5" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-ig mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <img src="profile.jpg" alt="Insta" class="w-full h-full object-cover rounded-full border-2 border-black">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
-                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
-                    <div class="mt-auto w-full py-2 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors font-semibold text-sm">
-                        <i class="fa-brands fa-instagram mr-1"></i> Follow
-                    </div>
-                </a>
+  <footer>
+    <div class="container">
+      <div class="footer-brand">SALAUDDIN · CCU STUDIOS</div>
+      <div>© <span id="year">2026</span> Salauddin Saif. All rights reserved.</div>
+    </div>
+  </footer>
 
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/share/1J1anKKTre/" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-fb mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <img src="profile.jpg" alt="Facebook" class="w-full h-full object-cover rounded-full border-2 border-black">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
-                    <p class="text-gray-400 text-sm mb-4">@1J1anKKTre</p>
-                    <div class="mt-auto w-full py-2 rounded-lg bg-[#1877F2]/10 border border-[#1877F2]/30 text-[#60a5fa] group-hover:bg-[#1877F2]/20 transition-colors font-semibold text-sm">
-                        <i class="fa-brands fa-facebook mr-1"></i> View Profile
-                    </div>
-                </a>
+  <script>
+    // Mobile navigation
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-                <!-- TikTok -->
-                <a href="https://tiktok.com/@iamsaif.001" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-tt mb-4 shadow-lg shadow-gray-800 group-hover:scale-110 transition-transform">
-                        <img src="social.jpg" alt="TikTok" class="w-full h-full object-cover rounded-full border-2 border-black">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
-                    <p class="text-gray-400 text-sm mb-4">@iamsaif.001</p>
-                    <div class="mt-auto w-full py-2 rounded-lg bg-white/10 border border-white/20 text-white group-hover:bg-white/20 transition-colors font-semibold text-sm">
-                        <i class="fa-brands fa-tiktok mr-1"></i> Follow
-                    </div>
-                </a>
-
-                <!-- Snapchat -->
-                <a href="https://www.snapchat.com/add/salauddin_idr25?share_id=VEYlw58C6jQ&locale=en-IN" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-sc mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                        <img src="social.jpg" alt="Snap" class="w-full h-full object-cover rounded-full border-2 border-black">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Salauddin</h4>
-                    <p class="text-gray-400 text-sm mb-4">@salauddin_idr25</p>
-                    <div class="mt-auto w-full py-2 rounded-lg bg-[#FFFC00]/10 border border-[#FFFC00]/30 text-[#FFFC00] group-hover:bg-[#FFFC00]/20 transition-colors font-semibold text-sm">
-                        <i class="fa-brands fa-snapchat mr-1"></i> Add Friend
-                    </div>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/salauddin-saif-6a30b6398" target="_blank" class="glass-card rounded-2xl p-6 flex flex-col items-center text-center group">
-                    <div class="w-20 h-20 rounded-full p-1 social-brand-in mb-4 shadow-lg group-hover:scale-110 transition-transform">
-                    
+    // Try the alternate assets path if the root image path fails.
+    // If both paths fail, keep a graceful gradient fallback instead of a broken-image icon.
+    document.querySelectorAll('img[data-image-fallback]').forEach(img => {
+      img.addEventListener('error', function onImageError() {
+        const fallback = this.dataset.imageFallback;
+        if (fallback && this.src !== new URL(fallback, location.href).href) {
+          this.dataset.imageFallback = '';
+          this.src = fallback;
+          return;
+        }
+        this.removeEventListener('error', onImageError);
+        this.style.visibility = 'hidden';
+        this.parentElement.style.background = 'linear-gradient(135deg,#356fe8,#8a58bc)';
+        if (this.classList.contains('brand-logo')) {
+          this.style.visibility = 'visible';
+          this.removeAttribute('src');
+          this.alt = 'CCU';
+          this.style.objectFit = 'contain';
+          this.style.padding = '7px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
