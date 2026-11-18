@@ -1,137 +1,227 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#09090d">
+  <meta name="theme-color" content="#0a0b10">
   <meta name="color-scheme" content="dark">
-  <title>Salauddin Saif | CCU Studios — App Developer & Comic Creator</title>
-  <meta name="description" content="Official website of Salauddin Saif, creator at CCU Studios. Explore Android applications, original comics, creative projects and official social profiles.">
-  <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Arhaan, Android app developer, comic creator, Indian comic universe">
+  <title>Salauddin Saif | Founder of CCU Studios — App Developer & Comic Creator</title>
+  <meta name="description" content="Official portfolio of Salauddin Saif, founder of CCU Studios. Android app developer and creator of original comics including Arhaan, Aryan, Orion, Michael and Trivexa.">
+  <meta name="keywords" content="Salauddin, Salauddin Saif, CCU Studios, Cosmic Cinematic Universe, Arhaan, Aryan, Orion, Trivexa, Android app developer, comic creator">
   <meta name="author" content="Salauddin Saif">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://salauddin-saif.vercel.app/">
 
-  <!-- Social sharing previews. Keep profile.png in the repository root for the image preview. -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CCU Studios">
+  <meta property="og:site_name" content="Salauddin Saif">
   <meta property="og:url" content="https://salauddin-saif.vercel.app/">
-  <meta property="og:title" content="Salauddin Saif | CCU Studios">
+  <meta property="og:title" content="Salauddin Saif | Founder of CCU Studios">
   <meta property="og:description" content="App Developer & Comic Creator. Explore Android apps and the original CCU Studios universe.">
   <meta property="og:image" content="https://salauddin-saif.vercel.app/profile.png">
-  <meta property="og:image:alt" content="Salauddin Saif — CCU Studios">
+  <meta property="og:image:alt" content="Salauddin Saif">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Salauddin Saif | CCU Studios">
-  <meta name="twitter:description" content="Explore Android apps, original comics and projects by Salauddin Saif.">
+  <meta name="twitter:title" content="Salauddin Saif | Founder of CCU Studios">
+  <meta name="twitter:description" content="Explore Android apps, original comics and characters by Salauddin Saif.">
   <meta name="twitter:image" content="https://salauddin-saif.vercel.app/profile.png">
 
   <link rel="icon" href="./profile.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://i.ibb.co">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Salauddin Saif",
     "url": "https://salauddin-saif.vercel.app/",
+    "image": "https://salauddin-saif.vercel.app/profile.png",
     "jobTitle": "App Developer and Comic Creator",
-    "description": "Creator at CCU Studios, working on Android applications and original comics.",
+    "worksFor": { "@type": "Organization", "name": "CCU Studios", "url": "https://ccu-studios.vercel.app/" },
     "sameAs": [
       "https://www.instagram.com/iamsaif.001/",
       "https://www.threads.com/@iamsaif.001",
       "https://www.linkedin.com/in/salauddin-saif-6a30b6398",
       "https://tiktok.com/@iamsaif.001",
-      "https://www.facebook.com/share/1J1anKKTre/"
+      "https://www.facebook.com/share/1J1anKKTre/",
+      "https://www.snapchat.com/add/salauddin_idr25"
     ]
   }
   </script>
 
   <style>
-    :root{--bg:#09090d;--panel:#12131b;--panel2:#191b26;--line:rgba(255,255,255,.1);--muted:#a5a8b8;--purple:#9b72ff;--blue:#4d8dff;--pink:#ed6bb5;--green:#54d6a0}
+    :root{
+      --bg:#0a0b10;--surface:#12141c;--surface-2:#191c27;--line:rgba(255,255,255,.08);--line-strong:rgba(255,255,255,.16);
+      --text:#f4f5f8;--muted:#9a9fb1;--accent:#f5a524;--accent-soft:rgba(245,165,36,.12);
+      --display:Sora,system-ui,sans-serif;--body:Inter,system-ui,sans-serif
+    }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:88px}
-    body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(77,141,255,.10),transparent 34%),radial-gradient(ellipse at 5% 35%,rgba(155,114,255,.08),transparent 28%),var(--bg);color:#f7f7fb;font-family:Outfit,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
-    .container{width:min(1120px,calc(100% - 40px));margin-inline:auto}
-    .gradient{background:linear-gradient(110deg,#b18aff 0%,#6495ff 55%,#ed78bd 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(9,9,13,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.09em;font-size:1.25rem}
-    .brand-logo{width:43px;height:43px;object-fit:cover;border-radius:13px;border:1px solid rgba(177,138,255,.65);background:linear-gradient(135deg,#26213c,#172b4d)}
-    .nav-links{display:flex;align-items:center;gap:25px;color:#c3c5d1;font-weight:500}
-    .nav-links a:hover,.nav-links a:focus-visible{color:#fff}
-    .menu-button{display:none;background:var(--panel2);color:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:10px;font:inherit}
-    .hero{min-height:610px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding-top:76px;padding-bottom:90px}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:99px;color:#c5a9ff;font-size:.92rem;font-weight:600}
-    h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.06;letter-spacing:-.045em;margin:23px 0}
-    .hero-copy{max-width:640px;font-size:1.22rem;color:var(--muted);font-weight:300;margin:0 0 30px}
-    .actions{display:flex;gap:13px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:13px;font-weight:700;border:1px solid var(--line);transition:transform .2s,filter .2s,background .2s}
-    .btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
-    .btn-primary{background:linear-gradient(115deg,#8056ed,#477df2);border-color:transparent;box-shadow:0 10px 32px rgba(93,93,242,.22)}
-    .btn-secondary{background:rgba(255,255,255,.045)}
-    .portrait-wrap{width:min(100%,390px);aspect-ratio:1;margin-inline:auto;padding:4px;border-radius:32px;background:linear-gradient(135deg,#9b72ff,#4d8dff,#ed6bb5);box-shadow:0 25px 80px rgba(77,105,255,.18)}
-    .portrait{width:100%;height:100%;object-fit:cover;border-radius:28px;background:linear-gradient(145deg,#356fe8,#8a58bc);color:white;text-align:center}
-    .section{padding:82px 0;border-top:1px solid rgba(255,255,255,.07)}
-    .section-alt{background:rgba(0,0,0,.24)}
-    .section-heading{text-align:center;margin:0 auto 44px;max-width:720px}
-    .section-heading h2,.about h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 12px}
-    .section-heading p{margin:0;color:var(--muted);font-size:1.08rem}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-    .panel{background:linear-gradient(145deg,rgba(26,28,40,.92),rgba(16,17,24,.9));border:1px solid var(--line);border-radius:23px;padding:30px;box-shadow:0 15px 45px rgba(0,0,0,.12)}
-    .panel p{color:var(--muted);margin:0 0 14px}
-    .panel p:last-child{margin-bottom:0}
-    .mini-icon{font-size:2.15rem;margin-bottom:14px}
-    .app-card{display:grid;grid-template-columns:120px 1fr;gap:27px;align-items:start}
-    .app-icon{height:120px;border-radius:25px;background:linear-gradient(135deg,#27233d,#132c4e);border:1px solid var(--line);display:grid;place-items:center;font-size:3rem}
-    .app-card h3{font-size:1.65rem;margin:0 0 8px}
-    .app-card p{color:var(--muted);margin:0 0 20px}
-    .tags{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 22px}
-    .tag{font-size:.83rem;color:#d5d7e3;background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:9px;padding:5px 10px}
-    .social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
-    .social-card{display:flex;align-items:center;gap:15px;padding:19px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:17px;transition:transform .2s,border-color .2s}
-    .social-card:hover{transform:translateY(-4px);border-color:rgba(155,114,255,.6)}
-    .social-icon{flex:0 0 47px;width:47px;height:47px;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;font-weight:800;color:#fff;background:linear-gradient(135deg,#8056ed,#477df2)}
-    .social-card strong{display:block}
-    .social-card small{color:var(--muted);overflow-wrap:anywhere}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:#8d90a1;text-align:center;font-size:.92rem}
-    .footer-brand{font-weight:800;color:#f7f7fb;letter-spacing:.08em;margin-bottom:5px}
-    @media(max-width:760px){
-      .container{width:min(100% - 32px,600px)}
-      .nav-inner{height:68px}
-      .menu-button{display:block}
-      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 22px;background:rgba(9,9,13,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
-      .nav-links.open{display:flex}
-      .nav-links a{padding:12px 4px}
-      .hero{grid-template-columns:1fr;gap:32px;padding-top:42px;padding-bottom:62px;text-align:center;min-height:auto}
-      .hero-content{order:2}.hero-visual{order:1}
-      .portrait-wrap{width:min(78vw,310px)}
-      .hero-copy{font-size:1.08rem;margin-inline:auto}
-      .actions{justify-content:center}
-      .section{padding:62px 0}
-      .about-grid{grid-template-columns:1fr}
-      .app-card{grid-template-columns:1fr;text-align:center}
-      .app-icon{width:105px;height:105px;margin-inline:auto}
-      .tags{justify-content:center}
-      .social-grid{grid-template-columns:1fr}
-      .panel{padding:24px}
-      h1{font-size:clamp(2.65rem,12vw,4rem)}
+    h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;margin:0}
+    .container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .accent{color:var(--accent)}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+    /* Navigation */
+    .nav{position:sticky;top:0;z-index:30;background:rgba(10,11,16,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:700;font-size:1.05rem}
+    .brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1.5px solid var(--accent)}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:.94rem;color:var(--muted);font-weight:500}
+    .nav-links a:hover{color:var(--text)}
+    .nav-cta{color:var(--bg)!important;background:var(--text);padding:8px 16px;border-radius:999px;font-weight:600}
+    .menu-button{display:none;background:transparent;color:var(--text);border:1px solid var(--line-strong);width:42px;height:42px;border-radius:10px;cursor:pointer}
+    .menu-button svg{width:20px;height:20px;margin:auto}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:.96rem;border:1px solid var(--line-strong);transition:transform .2s,background .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn svg{width:18px;height:18px;flex:none}
+    .btn-primary{background:var(--accent);color:#16110a;border-color:transparent}
+    .btn-primary:hover{background:#ffb83f}
+    .btn-ghost{background:rgba(255,255,255,.03)}
+    .btn-ghost:hover{border-color:var(--text)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:60px;padding:88px 0 96px}
+    .status{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 10px;border:1px solid var(--line-strong);border-radius:999px;font-size:.86rem;color:var(--muted)}
+    .status-dot{width:8px;height:8px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 4px rgba(62,207,142,.15)}
+    .hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.05;margin:22px 0 18px;font-weight:800}
+    .hero-lead{font-size:1.15rem;color:var(--muted);max-width:560px;margin:0 0 32px}
+    .hero-lead strong{color:var(--text);font-weight:600}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .stats{display:flex;gap:36px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+    .stat strong{display:block;font-family:var(--display);font-size:1.75rem;font-weight:700}
+    .stat span{color:var(--muted);font-size:.88rem}
+    .portrait-card{position:relative;width:min(100%,400px);margin-inline:auto}
+    .portrait-card img.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:24px;border:1px solid var(--line-strong)}
+    .portrait-badge{position:absolute;left:-18px;bottom:28px;display:flex;align-items:center;gap:12px;background:rgba(18,20,28,.92);backdrop-filter:blur(10px);border:1px solid var(--line-strong);padding:10px 16px 10px 10px;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+    .portrait-badge img{width:42px;height:42px;border-radius:10px;object-fit:cover;background:#000}
+    .portrait-badge strong{display:block;font-size:.92rem}
+    .portrait-badge span{font-size:.8rem;color:var(--muted)}
+
+    /* Sections */
+    .section{padding:96px 0;border-top:1px solid var(--line)}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+    .kicker{display:block;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:12px}
+    .section-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.15}
+    .section-head p{color:var(--muted);margin:10px 0 0;max-width:560px}
+    .link-arrow{display:inline-flex;align-items:center;gap:6px;color:var(--text);font-weight:600;font-size:.95rem;border-bottom:1px solid var(--line-strong);padding-bottom:3px}
+    .link-arrow:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* About */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+    .about-text p{color:var(--muted);font-size:1.06rem;margin:0 0 16px}
+    .about-text p strong{color:var(--text)}
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .skill{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .skill svg{width:26px;height:26px;color:var(--accent);margin-bottom:14px}
+    .skill h3{font-size:1.02rem;margin-bottom:6px}
+    .skill p{margin:0;color:var(--muted);font-size:.9rem}
+
+    /* App */
+    .app{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px}
+    .app-icon{width:120px;height:120px;border-radius:28px;object-fit:cover;background:#000;border:1px solid var(--line-strong);box-shadow:0 14px 34px rgba(0,0,0,.4)}
+    .app h3{font-size:1.6rem;margin-bottom:6px}
+    .app-meta{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem;margin-bottom:12px}
+    .app-meta img{width:18px;height:18px}
+    .app p{color:var(--muted);margin:0 0 16px;max-width:560px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{font-size:.8rem;color:#d4d7e2;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:4px 10px}
+    .app-side{display:flex;flex-direction:column;align-items:stretch;gap:10px;min-width:210px}
+    .app-side small{color:var(--muted);font-size:.78rem;text-align:center}
+
+    /* Characters */
+    .characters{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+    .character{position:relative;border-radius:18px;overflow:hidden;background:var(--surface);border:1px solid var(--line);aspect-ratio:3/4;transition:transform .25s,border-color .25s}
+    .character:hover{transform:translateY(-4px);border-color:var(--accent)}
+    .character img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .character:hover img{transform:scale(1.05)}
+    .character-info{position:absolute;inset:auto 0 0 0;padding:44px 16px 16px;background:linear-gradient(transparent,rgba(6,7,10,.95) 55%)}
+    .character-info h3{font-size:1.08rem;line-height:1.25}
+    .character-info span{font-size:.8rem;color:var(--accent);font-weight:600}
+
+    /* Comics rail */
+    .rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(170px,190px);gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#2a2e3c transparent}
+    .comic{scroll-snap-align:start}
+    .comic-cover{aspect-ratio:2/3;border-radius:12px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+    .comic-cover img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .comic:hover .comic-cover img{transform:scale(1.05)}
+    .comic h3{font-family:var(--body);font-size:.88rem;font-weight:600;line-height:1.35;margin-top:10px;color:#e2e4ec}
+
+    /* Social */
+    .social-group+.social-group{margin-top:48px}
+    .social-group h3{font-size:1rem;color:var(--muted);font-family:var(--body);font-weight:600;margin-bottom:16px}
+    .social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .social-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line);background:var(--surface);border-radius:16px;transition:transform .2s,border-color .2s}
+    .social-card:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+    .social-logo{flex:none;width:46px;height:46px;border-radius:12px;background:#fff;display:grid;place-items:center}
+    .social-logo img{width:26px;height:26px;object-fit:contain}
+    .social-card strong{display:block;font-size:.98rem}
+    .social-card small{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}
+    .social-card .chev{margin-left:auto;color:var(--muted);width:18px;height:18px;flex:none}
+
+    /* CTA + footer */
+    .cta{text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:64px 28px}
+    .cta h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:12px}
+    .cta p{color:var(--muted);margin:0 auto 28px;max-width:520px}
+    .cta .actions{justify-content:center}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.88rem}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;gap:44px;padding:48px 0 72px}
+      .hero-visual{order:-1}
+      .portrait-card{width:min(100%,340px)}
+      .portrait-card img.portrait{aspect-ratio:1}
+      .portrait-badge{left:12px}
+      .about{grid-template-columns:1fr;gap:36px}
+      .app{grid-template-columns:auto 1fr}
+      .app-side{grid-column:1/-1}
+      .social-grid{grid-template-columns:1fr 1fr}
     }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+    @media(max-width:640px){
+      .container{width:calc(100% - 32px)}
+      .menu-button{display:grid}
+      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:12px 16px 20px;background:rgba(10,11,16,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
+      .nav-links.open{display:flex}
+      .nav-links a{padding:13px 4px;border-bottom:1px solid var(--line)}
+      .nav-cta{margin-top:12px;text-align:center;border-bottom:0!important}
+      .stats{gap:24px}
+      .stat strong{font-size:1.45rem}
+      .section{padding:68px 0}
+      .skills{grid-template-columns:1fr}
+      .app{grid-template-columns:1fr;text-align:center;padding:26px}
+      .app-icon{margin-inline:auto;width:104px;height:104px}
+      .app-meta,.tags{justify-content:center}
+      .characters{grid-template-columns:1fr 1fr;gap:12px}
+      .character-info{padding:36px 12px 12px}
+      .character-info h3{font-size:.95rem}
+      .social-grid{grid-template-columns:1fr}
+      .footer-inner{justify-content:center;text-align:center}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="Salauddin Saif home">
-        <img class="brand-logo" src="./profile.png" alt="Salauddin Saif logo">
-        <span>SALAUDDIN</span>
+      <a class="brand" href="#home" aria-label="Salauddin Saif, home">
+        <img src="./profile.png" alt="" width="36" height="36">
+        <span>Salauddin Saif</span>
       </a>
-      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#apps">Apps</a><a href="#comics">Comics</a><a href="#social">Connect</a>
+        <a href="#about">About</a>
+        <a href="#apps">Apps</a>
+        <a href="#characters">Characters</a>
+        <a href="#comics">Comics</a>
+        <a class="nav-cta" href="#connect">Connect</a>
       </nav>
     </div>
   </header>
@@ -139,132 +229,240 @@
   <main>
     <section class="container hero" id="home">
       <div class="hero-content">
-        <span class="eyebrow">🚀 Welcome to CCU Studios</span>
-        <h1>I'm <span class="gradient">Salauddin Saif</span></h1>
-        <p class="hero-copy">App Developer &amp; Comic Creator. Crafting digital experiences and building the expansive universe of CCU Studios.</p>
+        <span class="status"><span class="status-dot" aria-hidden="true"></span>Founder, CCU Studios</span>
+        <h1>Building apps &amp; <span class="accent">original universes.</span></h1>
+        <p class="hero-lead">I&apos;m <strong>Salauddin Saif</strong> — an Android app developer and comic creator. I build useful digital products and write the stories of the <strong>Cosmic Cinematic Universe</strong>.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#apps">▣ My Applications</a>
-          <a class="btn btn-secondary" href="#social">Let's Connect <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-primary" href="#apps">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+            Download App
+          </a>
+          <a class="btn btn-ghost" href="#comics">Read Comics</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>23+</strong><span>Comic issues</span></div>
+          <div class="stat"><strong>9</strong><span>Original series</span></div>
+          <div class="stat"><strong>1</strong><span>Android app</span></div>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="portrait-wrap">
-          <img class="portrait" src="./profile.png" alt="Portrait of Salauddin Saif" width="700" height="700" fetchpriority="high">
+        <div class="portrait-card">
+          <img class="portrait" src="./profile.png" alt="Portrait of Salauddin Saif at sunset by the sea" width="700" height="875" fetchpriority="high">
+          <div class="portrait-badge">
+            <img src="https://ccu-studios.vercel.app/ccu-logo.png" alt="" width="42" height="42">
+            <div><strong>CCU Studios</strong><span>Cosmic Cinematic Universe</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="about">
-      <div class="container about-grid">
-        <article class="panel">
-          <h2>About <span class="gradient">Me</span></h2>
-          <p>Mera naam <strong>Salauddin Saif</strong> hai. Main technology aur storytelling ke beech bridge banata hoon. Mujhe Android applications develop karna aur unique fictional universes create karna pasand hai.</p>
-          <p>Har digital project ka goal ek useful, enjoyable experience banana hai, aur har comic ek nayi duniya ka darwaza kholti hai.</p>
-        </article>
-        <article class="panel">
-          <div class="mini-icon" aria-hidden="true">🌌</div>
-          <h2><span class="gradient">CCU Studios</span></h2>
-          <p><strong>The Universe of Imagination</strong></p>
-          <p>CCU Studios is my creative universe for original characters, comics and storytelling projects, including <em>Arhaan — The Indian Legacy of Science (1985)</em>.</p>
-        </article>
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about-text">
+          <span class="kicker">About</span>
+          <div class="section-head" style="margin-bottom:24px"><h2>Where technology meets storytelling.</h2></div>
+          <p>Mera naam <strong>Salauddin Saif</strong> hai. Main technology aur storytelling ke beech bridge banata hoon — Android applications develop karta hoon aur original fictional universes create karta hoon.</p>
+          <p>Har digital project ka goal ek useful, enjoyable experience banana hai, aur har comic ek nayi duniya ka darwaza kholti hai. <strong>CCU Studios</strong> mera creative universe hai jahan Arhaan, Aryan, Orion, Michael aur Trivexa jaise characters rehte hain.</p>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <h3>App Development</h3><p>Android apps designed for a smooth, simple experience.</p>
+          </div>
+          <div class="skill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6.5A2.5 2.5 0 0 0 4 21.5Z"/><path d="M8 7h7M8 11h5"/></svg>
+            <h3>Comic Writing</h3><p>Original series, issues and long-form storytelling.</p>
+          </div>
+          <div class="skill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+            <h3>Character Design</h3><p>Heroes, villains and legacies with their own worlds.</p>
+          </div>
+          <div class="skill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            <h3>Universe Building</h3><p>A connected multiverse across every CCU story.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="apps">
       <div class="container">
-        <div class="section-heading">
-          <h2>Official <span class="gradient">Applications</span></h2>
-          <p>Explore Android applications created by Salauddin Saif.</p>
+        <div class="section-head">
+          <div><span class="kicker">Applications</span><h2>Official app</h2><p>Read every CCU comic on your phone with the official Android app.</p></div>
         </div>
-        <article class="panel app-card">
-          <div class="app-icon" aria-hidden="true">🤖</div>
+        <article class="app">
+          <img class="app-icon" src="https://ccu-studios.vercel.app/ccu-logo.png" alt="CCU Studios app icon" width="120" height="120" loading="lazy">
           <div>
-            <h3>CCU Studios App</h3>
-            <p>Official Android application for the CCU Studios experience. Download the APK using the link below.</p>
-            <div class="tags"><span class="tag">Android APK</span><span class="tag">Developer: Salauddin Saif</span><span class="tag">Direct download</span></div>
-            <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&amp;id=1vcTaUBnEt06x6PorON98KA2NVn0tngff" target="_blank" rel="noopener noreferrer">↓ Download APK File</a>
-            <p style="font-size:.88rem;margin-top:14px">Only install APK files you trust. Android may ask you to approve installation from your browser.</p>
+            <h3>CCU Studios</h3>
+            <div class="app-meta">
+              <img src="https://thesvg.org/icons/android/default.svg" alt="" width="18" height="18">
+              <span>Android · by Salauddin Saif</span>
+            </div>
+            <p>The official CCU Studios experience — browse the Cosmic Cinematic Universe, discover characters and read the latest issues.</p>
+            <div class="tags"><span class="tag">Android APK</span><span class="tag">Comics reader</span><span class="tag">Free</span></div>
+          </div>
+          <div class="app-side">
+            <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&amp;id=1vcTaUBnEt06x6PorON98KA2NVn0tngff" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+              Download APK
+            </a>
+            <a class="btn btn-ghost" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Open web version</a>
+            <small>Android may ask you to allow installs from your browser.</small>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section section-alt" id="comics">
+    <section class="section" id="characters">
       <div class="container">
-        <div class="section-heading">
-          <h2>Stories from <span class="gradient">CCU Studios</span></h2>
-          <p>Original worlds, characters and science-fiction storytelling.</p>
+        <div class="section-head">
+          <div><span class="kicker">The CCU Universe</span><h2>Meet the characters</h2><p>The heroes and legends of the Cosmic Cinematic Universe.</p></div>
+          <a class="link-arrow" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Explore CCU Studios <span aria-hidden="true">→</span></a>
         </div>
-        <article class="panel">
-          <div class="mini-icon" aria-hidden="true">📚</div>
-          <h3>Arhaan — The Indian Legacy of Science (1985)</h3>
-          <p>Explore the novel and other original storytelling projects published under CCU Studios.</p>
-          <a class="btn btn-secondary" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Visit CCU Studios ↗</a>
-        </article>
+        <div class="characters" id="characterGrid"></div>
       </div>
     </section>
 
-    <section class="section" id="social">
+    <section class="section" id="comics">
       <div class="container">
-        <div class="section-heading">
-          <h2>Official <span class="gradient">Social Profiles</span></h2>
-          <p>Connect for updates on applications, comics and creative projects.</p>
+        <div class="section-head">
+          <div><span class="kicker">Library</span><h2>Latest comics</h2><p>Every published issue from CCU Studios.</p></div>
+          <a class="link-arrow" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Read on CCU Studios <span aria-hidden="true">→</span></a>
         </div>
-        <div class="social-grid">
-          <a class="social-card" href="https://www.instagram.com/iamsaif.001/" target="_blank" rel="noopener noreferrer"><span class="social-icon">IG</span><span><strong>Instagram</strong><small>@iamsaif.001</small></span></a>
-          <a class="social-card" href="https://www.threads.com/@iamsaif.001" target="_blank" rel="noopener noreferrer"><span class="social-icon">@</span><span><strong>Threads</strong><small>@iamsaif.001</small></span></a>
-          <a class="social-card" href="https://www.facebook.com/share/1J1anKKTre/" target="_blank" rel="noopener noreferrer"><span class="social-icon">f</span><span><strong>Facebook</strong><small>View profile</small></span></a>
-          <a class="social-card" href="https://tiktok.com/@iamsaif.001" target="_blank" rel="noopener noreferrer"><span class="social-icon">♪</span><span><strong>TikTok</strong><small>@iamsaif.001</small></span></a>
-          <a class="social-card" href="https://www.snapchat.com/add/salauddin_idr25" target="_blank" rel="noopener noreferrer"><span class="social-icon">S</span><span><strong>Snapchat</strong><small>@salauddin_idr25</small></span></a>
-          <a class="social-card" href="https://www.linkedin.com/in/salauddin-saif-6a30b6398" target="_blank" rel="noopener noreferrer"><span class="social-icon">in</span><span><strong>LinkedIn</strong><small>Salauddin Saif</small></span></a>
+        <div class="rail" id="comicRail" tabindex="0" aria-label="Comic issues, scroll horizontally"></div>
+      </div>
+    </section>
+
+    <section class="section" id="connect">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="kicker">Connect</span><h2>Find me online</h2><p>Follow for updates on apps, comics and new characters.</p></div>
+        </div>
+        <div class="social-group">
+          <h3>Salauddin Saif</h3>
+          <div class="social-grid" id="personalSocial"></div>
+        </div>
+        <div class="social-group">
+          <h3>CCU Studios</h3>
+          <div class="social-grid" id="studioSocial"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding-bottom:96px">
+      <div class="cta">
+        <h2>Let&apos;s build something together.</h2>
+        <p>Collaborations, feedback or just a hello — my inbox on Instagram and LinkedIn is always open.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/salauddin-saif-6a30b6398" target="_blank" rel="noopener noreferrer">Message on LinkedIn</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/iamsaif.001/" target="_blank" rel="noopener noreferrer">DM on Instagram</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-brand">SALAUDDIN · CCU STUDIOS</div>
-      <div>© <span id="year">2026</span> Salauddin Saif. All rights reserved.</div>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Salauddin Saif · CCU Studios</span>
+      <span>Logos are trademarks of their respective owners.</span>
     </div>
   </footer>
 
   <script>
-    // Mobile navigation
+    const COVER = 'https://i.ibb.co/';
+    const ICON = slug => `https://thesvg.org/icons/${slug}/default.svg`;
+
+    const characters = [
+      { name: 'Arhaan', series: 'The Indian Legacy of Science', img: 'zHfYx4xy/1000057721.png' },
+      { name: 'Aryan', series: 'The Beast', img: 'WvR4HghH/1000040618.png' },
+      { name: 'Orion', series: 'The Ascension', img: 'DByT7pg/1000039126.png' },
+      { name: 'Michael', series: 'The Former Crown', img: 'TD45Y9mm/1000038922.png' },
+      { name: 'Trivexa', series: 'Chapters 1–4', img: '8nj2HQq5/1000046850.png' },
+      { name: 'Zenith', series: 'The Divine Shadow', img: 'zH63LS0P/1000037992.png' },
+      { name: 'AEK', series: 'The Shadow Entity', img: 'cnp2L8m/1000054649.jpg' },
+      { name: 'The Alliance', series: 'Team-up series', img: 'tT2HTkSQ/1000039595.png' },
+      { name: 'Saif', series: 'Legacy of Saif: Rise', img: 'vCLLVw8Z/1000037440.png' }
+    ];
+
+    const comics = [
+      ['ARHAAN — 1985 — Part 4', 'ns9MKD60/1000061764.png'],
+      ['ARHAAN — 1985 — Part 3', 'wZyh6DRp/1000060882.jpg'],
+      ['ARHAAN — 1985 — Part 2', 'Rpj1TfVh/1000059992.jpg'],
+      ['ARHAAN — 1985 — Part 1', 'zHfYx4xy/1000057721.png'],
+      ['Michael – Crack in the Multiverse 2', 'V08pfx9p/1000061705.png'],
+      ['Michael – Crack in the Multiverse 1', 'ynspC92C/1000057284.png'],
+      ['TRIVEXA: Chapter 4', 'GfNCcYTx/1000055718.jpg'],
+      ['TRIVEXA: Chapter 3', 'V0Lc4P3P/1000053995.png'],
+      ['TRIVEXA: Chapter 2', 'BSYxF8V/1000052274.png'],
+      ['TRIVEXA: Chapter 1', '8nj2HQq5/1000046850.png'],
+      ['AEK: The Shadow Entity 1', 'cnp2L8m/1000054649.jpg'],
+      ['ARYAN: The Beast 3', 'yF5ffmHY/1000041866.png'],
+      ['ARYAN: The Beast 2', 'LLrQRFM/1000040851.png'],
+      ['ARYAN: The Beast 1', 'WvR4HghH/1000040618.png'],
+      ['The Alliance – Issue 3', 'YTTbF8DN/1000040273.png'],
+      ['The Alliance – Issue 2', 'rKBkMGCj/1000040013.png'],
+      ['The Alliance – Issue 1', 'tT2HTkSQ/1000039595.png'],
+      ['Orion – The Ascension 2', 'zwbv7nf/1000039259.png'],
+      ['Orion – The Ascension 1', 'DByT7pg/1000039126.png'],
+      ['Michael – The Former Crown 2', '4nxjVFWd/1000038955.png'],
+      ['Michael – The Former Crown 1', 'TD45Y9mm/1000038922.png'],
+      ['Zenith: The Divine Shadow 1', 'zH63LS0P/1000037992.png'],
+      ['Legacy of Saif: Rise 1', 'vCLLVw8Z/1000037440.png']
+    ];
+
+    const personalSocial = [
+      ['Instagram', '@iamsaif.001', 'instagram', 'https://www.instagram.com/iamsaif.001/'],
+      ['Threads', '@iamsaif.001', 'threads', 'https://www.threads.com/@iamsaif.001'],
+      ['LinkedIn', 'Salauddin Saif', 'linkedin', 'https://www.linkedin.com/in/salauddin-saif-6a30b6398'],
+      ['Facebook', 'View profile', 'facebook', 'https://www.facebook.com/share/1J1anKKTre/'],
+      ['TikTok', '@iamsaif.001', 'tiktok', 'https://tiktok.com/@iamsaif.001'],
+      ['Snapchat', '@salauddin_idr25', 'snapchat', 'https://www.snapchat.com/add/salauddin_idr25']
+    ];
+
+    const studioSocial = [
+      ['YouTube', '@ccustudios', 'youtube', 'https://youtube.com/@ccustudios'],
+      ['Instagram', '@ccustudios_', 'instagram', 'https://www.instagram.com/ccustudios_'],
+      ['X', '@ccu_studios', 'x', 'https://x.com/ccu_studios'],
+      ['TikTok', '@ccustudios_', 'tiktok', 'https://www.tiktok.com/@ccustudios_'],
+      ['Facebook', 'CCU Studios', 'facebook', 'https://www.facebook.com/share/1BNHLQhByc/'],
+      ['Website', 'ccu-studios.vercel.app', null, 'https://ccu-studios.vercel.app/']
+    ];
+
+    const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const chevron = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+
+    document.getElementById('characterGrid').innerHTML = characters.map(c => `
+      <a class="character" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img src="${COVER + c.img}" alt="${esc(c.name)} — ${esc(c.series)} cover art" loading="lazy" width="300" height="400">
+        <div class="character-info"><span>${esc(c.series)}</span><h3>${esc(c.name)}</h3></div>
+      </a>`).join('');
+
+    document.getElementById('comicRail').innerHTML = comics.map(([title, img]) => `
+      <a class="comic" href="https://ccu-studios.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <div class="comic-cover"><img src="${COVER + img}" alt="Cover of ${esc(title)}" loading="lazy" width="190" height="285"></div>
+        <h3>${esc(title)}</h3>
+      </a>`).join('');
+
+    const renderSocial = list => list.map(([name, handle, slug, url]) => `
+      <a class="social-card" href="${url}" target="_blank" rel="noopener noreferrer">
+        <span class="social-logo"><img src="${slug ? ICON(slug) : 'https://ccu-studios.vercel.app/ccu-logo.png'}" alt="" width="26" height="26" loading="lazy" ${slug ? '' : 'style="width:46px;height:46px;border-radius:12px;object-fit:cover"'}></span>
+        <span><strong>${name}</strong><small>${esc(handle)}</small></span>${chevron}
+      </a>`).join('');
+    document.getElementById('personalSocial').innerHTML = renderSocial(personalSocial);
+    document.getElementById('studioSocial').innerHTML = renderSocial(studioSocial);
+
     const menuButton = document.getElementById('menuButton');
     const navLinks = document.getElementById('navLinks');
     menuButton.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     });
     navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
       navLinks.classList.remove('open');
       menuButton.setAttribute('aria-expanded', 'false');
     }));
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Try the alternate assets path if the root image path fails.
-    // If both paths fail, keep a graceful gradient fallback instead of a broken-image icon.
-    document.querySelectorAll('img[data-image-fallback]').forEach(img => {
-      img.addEventListener('error', function onImageError() {
-        const fallback = this.dataset.imageFallback;
-        if (fallback && this.src !== new URL(fallback, location.href).href) {
-          this.dataset.imageFallback = '';
-          this.src = fallback;
-          return;
-        }
-        this.removeEventListener('error', onImageError);
-        this.style.visibility = 'hidden';
-        this.parentElement.style.background = 'linear-gradient(135deg,#356fe8,#8a58bc)';
-        if (this.classList.contains('brand-logo')) {
-          this.style.visibility = 'visible';
-          this.removeAttribute('src');
-          this.alt = 'CCU';
-          this.style.objectFit = 'contain';
-          this.style.padding = '7px';
-        }
-      });
-    });
   </script>
 </body>
 </html>
