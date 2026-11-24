@@ -357,6 +357,8 @@
       box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 28px 70px rgba(0,0,0,.26)
     }
     .app-icon{box-shadow:0 18px 42px rgba(0,0,0,.36),0 0 0 1px rgba(255,255,255,.16)}
+    .app-icon-android{display:grid;place-items:center;background:linear-gradient(145deg,#70f0a4,#28c76f)}
+    .app-icon-android img{width:56px;height:56px;filter:brightness(0)}
     .tag{
       color:#e5e8f0;
       background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.035));
@@ -462,7 +464,7 @@
     <section class="section" id="apps">
       <div class="container">
         <div class="section-head">
-          <div><span class="kicker">Read anywhere</span><h2>Official CCU Studios app</h2><p>Read every CCU comic on your phone with the official Android app.</p></div>
+          <div><span class="kicker">Android apps</span><h2>Apps &amp; tools</h2><p>Download the CCU Studios comics app or Mediveu ERP for Android.</p></div>
         </div>
         <article class="app">
           <img class="app-icon" src="https://ccu-studios.vercel.app/ccu-logo.png" alt="CCU Studios app icon" width="120" height="120" loading="lazy">
@@ -485,6 +487,25 @@
           </div>
         </article>
         <p class="app-credit">Created by <a href="#about">Salauddin</a> (also known as Salauddin Saif), founder of CCU Studios.</p>
+        <article class="app">
+          <div class="app-icon app-icon-android" aria-hidden="true"><img src="./icons/android.svg" alt=""></div>
+          <div>
+            <h3>Mediveu ERP</h3>
+            <div class="app-meta">
+              <span class="social-logo" style="width:24px;height:24px;border-radius:6px;background:#3DDC84;box-shadow:none"><img src="./icons/android.svg" alt="" width="14" height="14" style="width:14px;height:14px;filter:brightness(0)"></span>
+              <span>Android · ERP</span>
+            </div>
+            <p>Mediveu ERP for Android.</p>
+            <div class="tags"><span class="tag">Android APK</span><span class="tag">ERP</span></div>
+          </div>
+          <div class="app-side">
+            <a class="btn btn-primary" href="https://www.mediveu.site/mediveu.apk" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+              Download Mediveu ERP
+            </a>
+            <small>Android may ask you to allow installs from your browser.</small>
+          </div>
+        </article>
       </div>
     </section>
 
